@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+}
+
+.buttonLogin {
+	width: 90px;
+	color: #2b2d42;
+	background-color: transparent;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+.buttonLogin:hover {
+	color: #8d99ae;
+}
+
+.buttonRegister {
+	width: 90px;
+	color: #fff;
+	padding: 1em;
+	border-radius: 25px;
+	background-color: #2b2d42;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+.buttonRegister:hover {
+	color: #8d99ae;
+}

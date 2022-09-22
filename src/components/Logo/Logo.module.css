@@ -1,0 +1,27 @@
+.logoWrapper {
+	display: flex;
+	align-items: center;
+	padding: 0 0.5em;
+}
+
+.logoImg {
+	width: 35px;
+	height: 35px;
+}
+
+.logoImg img {
+	width: 100%;
+	height: 100%;
+}
+
+.logoText {
+	font-size: 16px;
+	margin: 0;
+	margin-left: 4px;
+	color: #2b2d42;
+	font-weight: lighter;
+}
+
+.logoText span {
+	font-weight: bold;
+}

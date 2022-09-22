@@ -1,0 +1,28 @@
+.navbar {
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	margin: 0 0.5em;
+}
+
+.navbarContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+	line-height: 60px;
+}
+
+.leftSection {
+	display: flex;
+}
+.middleSection {
+	display: flex;
+	flex: 2;
+	height: 100%;
+	justify-content: center;
+}
+.rightSection {
+	display: flex;
+}
+
