@@ -12,6 +12,7 @@
 	list-style: none;
 	background-color: #fff;
 	width: 100%;
+	display: flex;
 	flex-direction: column;
 	position: fixed;
 	top: 65px;
@@ -37,7 +38,7 @@
 .navLink:hover {
 	color: #8d99ae;
 }
-
+/* 
 .navLink::before {
 	position: absolute;
 	content: '';
@@ -53,5 +54,4 @@
 .navLink:hover::before {
 	transform: scaleX(1);
 	transform-origin: left;
-}
-
+} */

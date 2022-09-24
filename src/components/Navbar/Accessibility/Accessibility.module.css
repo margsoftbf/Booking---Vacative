@@ -1,16 +1,19 @@
 .container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 10px;
+	margin: 10px;
 }
 
 .buttonLogin {
+
 	width: 90px;
 	color: #2b2d42;
 	background-color: transparent;
 	font-weight: bold;
 	transition: color 0.3s;
+	margin: 10px;
 }
 
 .buttonLogin:hover {
@@ -29,4 +32,11 @@
 
 .buttonRegister:hover {
 	color: #8d99ae;
+}
+
+@media (min-width: 992px) {
+	.container {
+		flex-direction: row;
+		margin-left: 10px;
+	}
 }
