@@ -7,7 +7,6 @@
 .navLinksWrapper {
 	margin: 0;
 	padding: 0;
-	display: flex;
 	height: 100%;
 	list-style: none;
 	background-color: #fff;
@@ -17,6 +16,7 @@
 	position: fixed;
 	top: 65px;
 	left: 0;
+	z-index: 1000;
 }
 
 .navLinkItem {
