@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar';
 
 
 function List(props) {
   return (
-    <div>List</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 

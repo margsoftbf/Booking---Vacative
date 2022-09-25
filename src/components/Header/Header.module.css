@@ -86,6 +86,7 @@
 	align-items: center;
 	margin: 0.5em;
 	width: 280px;
+	cursor: pointer;
 }
 
 .headerSearchbar {
@@ -97,6 +98,7 @@
 
 .headerSearchText {
 	font-size: 1.4rem;
+	color: #8d99ae;
 }
 
 .headerSearchBtn {
@@ -111,6 +113,59 @@
 
 .headerSearchBtn:hover {
 	color: #8d99ae;
+}
+
+.dateRange {
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 1rem;
+	z-index: 20;
+}
+
+.options {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70px;
+	background-color: white;
+	color: gray;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	z-index: 20;
+}
+
+.optionsItem {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.5em;
+}
+
+.leftSide {
+	width: 75%;
+}
+.rightSide {
+	display: flex;
+	justify-content: space-between;
+	width: 25%;
+}
+
+.optionCounterButton {
+	width: 20px;
+	height: 20px;
+	color: #ef233c;
+	border: 1px solid #ef233c;
+	cursor: pointer;
+	background-color: white;
+}
+
+.optionCounterButton:disabled {
+	cursor: not-allowed;
 }
 
 @media (min-width: 575px) {
@@ -131,6 +186,11 @@
 	.headerSearchBtn {
 		width: 100%;
 	}
+
+	.dateRange {
+		font-size: 1.4rem;
+		width: 400px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -141,5 +201,9 @@
 		flex-direction: row;
 		align-items: center;
 		width: 90%;
+	}
+
+	.options {
+		top: 35px;
 	}
 }
