@@ -1,0 +1,90 @@
+.itemsContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.item {
+	flex-basis: 300px;
+	flex: auto;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.itemImg {
+	object-fit: cover;
+	width: 100%;
+	height: 200px;
+}
+
+.itemName {
+	color: #333;
+	font-weight: bold;
+}
+
+.itemCity {
+	font-weight: 300;
+}
+
+.itemPrice {
+	font-weight: 500;
+}
+
+.bottomSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1em;
+}
+.leftSection {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.itemRating > button {
+	background-color: #003580;
+	color: white;
+	border: none;
+	padding: 3px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.itemRating > span {
+	font-size: 14px;
+}
+
+.itemName {
+	font-size: 1.6rem;
+}
+
+.itemCity {
+	font-size: 1.4rem;
+}
+.itemPrice {
+	font-size: 1.2rem;
+}
+
+@media (min-width: 576px) {
+	.itemsContainer {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.item {
+		flex-basis: 200px;
+	}
+}
+@media (min-width: 768px) {
+	.item {
+		flex-basis: 160px;
+	}
+}
