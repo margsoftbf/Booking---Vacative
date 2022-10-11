@@ -7,10 +7,7 @@ import { MobileNavLinks } from './MobileNavLinks/MobileNavLinks';
 import { Accessibility } from './Accessibility/Accessibility';
 
 const DeviceSize = {
-    mobile: 768,
-    tablet: 992,
-    laptop: 1324,
-    desktop: 2024,
+    mobile: 992,
 }
 
 function Navbar() {

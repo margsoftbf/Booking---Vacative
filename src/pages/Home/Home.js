@@ -5,6 +5,8 @@ import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import PropertyList from '../../components/PropertyList/PropertyList';
 import FeaturedProperties from '../../components/FeaturedProperties/FeaturedProperties';
+import { MailList } from '../../components/MailList/MailList';
+import Footer from '../../components/Footer/Footer';
 
 function Home(props) {
   return (
@@ -17,6 +19,8 @@ function Home(props) {
         <PropertyList />
         <h1 className={`${style.homeTitle}`}>Home guests love</h1>
         <FeaturedProperties />
+        <MailList />
+        <Footer />
       </div>
     </>
   )

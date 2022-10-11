@@ -1,0 +1,19 @@
+.container {
+	width: 100%;
+	max-width: 1200px;
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.footerLists {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1em;
+}
+
+.footerItem {
+	list-style: none;
+	cursor: pointer;
+}

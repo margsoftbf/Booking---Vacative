@@ -11,8 +11,10 @@ import {
     faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useNavigate } from 'react-router-dom';
 
 function Header(props) {
+    const [destination, setDestination] = useState("")
     const [openDate, setOpenDate] = useState(false)
     const [date, setDate] = useState([
         {
@@ -28,6 +30,8 @@ function Header(props) {
         children: 0,
     })
 
+    const navigate = useNavigate()
+
     const handleOption = (name, operation) => {
         setOptions((prev) => {
             return {
@@ -36,6 +40,10 @@ function Header(props) {
             };
         });
     };
+
+    const handleSearch = () => {
+        navigate("/hotels", { state: { destination, date, options } })
+    }
 
     return (
         <div className={`${style.header}`}>
@@ -49,7 +57,7 @@ function Header(props) {
                 </div>
                 <div className={`${style.headerSearch}`}>
                     <div className={`${style.headerSearchItem}`}>
-                        <FontAwesomeIcon className={`${style.searchIcon}`} icon={faMagnifyingGlass} /> <input type='text' placeholder='Where are you going?' className={`${style.headerSearchbar}`}></input>
+                        <FontAwesomeIcon className={`${style.searchIcon}`} icon={faMagnifyingGlass} /> <input type='text' placeholder='Where are you going?' className={`${style.headerSearchbar}`} onChange={e => setDestination(e.target.value)}></input>
                     </div>
                     <div className={`${style.headerSearchItem}`}>
                         <FontAwesomeIcon className={`${style.searchIcon}`} icon={faCalendarDays} /> <span onClick={() => setOpenDate(!openDate)} className={`${style.headerSearchText}`}>{`${format(date[0].startDate, "MM/dd")} to ${format(
@@ -62,6 +70,7 @@ function Header(props) {
                             moveRangeOnFirstSelection={false}
                             ranges={date}
                             className={`${style.dateRange}`}
+                            minDate={new Date()}
                         />}
                     </div>
                     <div className={`${style.headerSearchItem}`}>
@@ -86,7 +95,7 @@ function Header(props) {
                         </div>}
                     </div>
                     <div className={`${style.headerSearchItem}`}>
-                        <button className={`${style.headerSearchBtn}`}>Search</button></div>
+                        <button className={`${style.headerSearchBtn}`} onClick={handleSearch}>Search</button></div>
                 </div>
             </div>
         </div>

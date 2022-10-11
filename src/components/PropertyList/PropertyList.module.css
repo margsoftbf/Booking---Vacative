@@ -5,6 +5,10 @@
 	gap: 10px;
 	z-index: 1;
 	overflow: hidden;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0.5em;
 }
 
 .propertyListItem {
@@ -37,11 +41,6 @@
 }
 
 @media (min-width: 576px) {
-	/* .propertyItems {
-		flex-direction: row;
-		flex-wrap: wrap;
-	} */
-
 	.propertyListItem {
 		flex-basis: 200px;
 	}

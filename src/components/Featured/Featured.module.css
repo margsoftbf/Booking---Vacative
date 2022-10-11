@@ -3,9 +3,12 @@
 	flex-direction: column;
 	justify-content: space-between;
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 	gap: 10px;
 	z-index: 1;
 	overflow: hidden;
+	padding: 0.5em;
 }
 .featuredItem {
 	position: relative;
